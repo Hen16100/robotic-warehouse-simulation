@@ -1,0 +1,16 @@
+@startuml
+actor Customer
+participant Warehouse
+participant Order
+participant Task
+participant Robot
+participant Shelf
+
+Customer -> Warehouse: Place order
+Warehouse -> Order: Create order
+Warehouse -> Task: Create task
+Warehouse -> Robot: Assign task
+Robot -> Shelf: Retrieve item
+Robot -> Warehouse: Deliver item
+Order -> Customer: Order complete
+@enduml
