@@ -1,0 +1,51 @@
+@startuml
+class Warehouse {
+  - layout
+  - shelves
+  - robots
+  - orders
+  + assign_task()
+  + update()
+}
+
+class Robot {
+  - id
+  - position
+  - state
+  - task
+  + move()
+  + pickup()
+  + deliver()
+}
+
+class Order {
+  - id
+  - items
+  - arrival_time
+  - status
+  + assign_robot()
+  + complete()
+}
+
+class Shelf {
+  - id
+  - location
+  - items
+  + remove_item()
+  + add_item()
+}
+
+class Task {
+  - order_id
+  - shelf
+  - destination
+  + execute()
+}
+
+Warehouse "1" *-- "*" Robot
+Warehouse "1" *-- "*" Shelf
+Warehouse "1" *-- "*" Order
+Robot "1" --> "1" Task
+Task --> Order
+Task --> Shelf
+@enduml
