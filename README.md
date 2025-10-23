@@ -3,6 +3,8 @@
 ## Overview
 This project simulates an agent-based robotic warehouse system using discrete-event simulation. It models robots, shelves, and customer orders to analyze task allocation, routing, and system performance.
 
+Each simulation run will generate a JSON file, a CSV file, and a visual animation in the form of a GIF, showing the robots performing their task.
+
 ## Repository Structure
 - `main.py` - main simulation entry point
 - `src/` - Python classes for Warehouse, Robot, Order, Shelf, Task
@@ -28,17 +30,47 @@ This project simulates an agent-based robotic warehouse system using discrete-ev
 - Unit tests for core components
 - Basic logging/data collection mechanisms
 
-**Planned (M3 / later)**
-- More sophosticated task allocations
-- Collision avoidance and multi-robot path coordination
-- Visualization using SimPy, Matplot, and NetworkX
-- Performance evaluation and plots
-- CI and packaging
-- Extended test-suite and sample scenarios
 
-**Changes from proposal**
-- Implemented Nearest-Neighbor allocator in addition to FIFO
-- A* chosen for path planning now
+**Milestone 3 (Complete implementation)**
+- Completed full simulation logic
+- Added collision avoidance using robot priority
+- Robots now avoid shelves and other robots
+- Implemented a multi-run execution
+- Added data collection in CSV
+- Added visualization output
+- Extended warehouse with configurable size, number of shelves, robots, and tasks
+- Integrated performance metrics such as robot utilization and step count
+
+
+## Simulation Features
+| Feature | Description |
+|----------|--------------|
+| **Task Allocation** | FIFO or nearest-shelf heuristic. |
+| **Pathfinding** | A* algorithm avoiding shelves and occupied cells. |
+| **Collision Avoidance** | Priority-based movement scheduling (robot 1 > robot 2 > ...). |
+| **Visualization** | Matplotlib animation showing robots, shelves, and paths. |
+| **Data Logging** | Exports detailed step-by-step logs and summary reports. |
+| **Parameterization** | Width, height, number of robots, steps, and random seed configurable. |
+
+
+## Data Output
+Each simulation run produces:
+- **`run_###.csv`** – Time-series log of robot position, state, and task.
+- **`run_###_summary.json`** – Summary statistics for that run.
+- **`run_###.gif`** – Visualization of the robot movement.
+
+
+Example:
+```json
+{
+    "run_id": 3,
+  "steps": 142,
+  "duration_s": 1.97,
+  "nrobots": 5,
+  "ntasks": 10,
+  "robot_utilization": { "1": 98, "2": 105, "3": 92, "4": 100, "5": 87 }
+}
+
 
 ## Installation
 Requirements: Python 3.10+ (3.9 may work)
