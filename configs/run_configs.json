@@ -1,0 +1,30 @@
+{
+  "default": {
+    "width": 16,
+    "height": 12,
+    "nrobots": 4,
+    "ntasks": 20,
+    "algo": "nearest",
+    "steps": 2000,
+    "seed": 42,
+    "out_prefix": "run"
+  },
+  "scenarios": [
+    {
+      "id": "001_baseline",
+      "description": "Baseline defaults",
+      "overrides": {}
+    },
+    {
+      "id": "002_high_entities",
+      "description": "High tasks",
+      "overrides": {"ntasks": 200, "nrobots": 20}
+    },
+    {
+      "id": "003_wide_grid",
+      "description": "Large warehouse",
+      "overrides": {"width": 40, "height": 20, "ntasks": 300}
+    }
+    /* Add more scenarios or create them programmatically in run_manager */
+  ]
+}
