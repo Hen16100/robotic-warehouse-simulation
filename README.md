@@ -85,7 +85,9 @@ pip install -r requirements.txt
 
 ## How to run
 For a single simulation:
+```python
 python main.py
+```
 
 To run 10 simulations with different seeds:
 ```python
