@@ -70,7 +70,7 @@ Example:
   "ntasks": 10,
   "robot_utilization": { "1": 98, "2": 105, "3": 92, "4": 100, "5": 87 }
 }
-
+```json
 
 ## Installation
 Requirements: Python 3.10+ (3.9 may work)
