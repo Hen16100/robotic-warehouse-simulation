@@ -81,3 +81,26 @@ python -m venv venv
 source venv/bin/activate    # Unix
 venv\Scripts\activate   # Windows
 pip install -r requirements.txt
+
+## How to run
+For a single simulation:
+python main.py
+
+To run 10 simulations with different seeds:
+from main import RunManager
+
+manager = RunManager(
+    width=15,
+    height=12,
+    nrobots=3,
+    ntasks=6,
+    steps=200,
+    algo='fifo',
+    seed=42
+)
+manager.run_multiple(runs = 10)
+
+To run with custom parameters:
+manager = RunManager(width=xx, height=xx, nrobots=x, ntasks=xx, algo='xxx', seed=xx)
+manager.run_single(run_id=1)
+
