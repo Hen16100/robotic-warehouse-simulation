@@ -72,7 +72,7 @@ Example:
 }
 ```json
 
-## Installation
+# Installation
 Requirements: Python 3.10+ (3.9 may work)
 1. Clone repo
 2. Create venv:
@@ -82,7 +82,7 @@ source venv/bin/activate    # Unix
 venv\Scripts\activate   # Windows
 pip install -r requirements.txt
 
-## How to run
+# How to run
 For a single simulation:
 python main.py
 
