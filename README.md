@@ -70,9 +70,9 @@ Example:
   "ntasks": 10,
   "robot_utilization": { "1": 98, "2": 105, "3": 92, "4": 100, "5": 87 }
 }
-```json
+```
 
-# Installation
+## Installation
 Requirements: Python 3.10+ (3.9 may work)
 1. Clone repo
 2. Create venv:
@@ -81,12 +81,14 @@ python -m venv venv
 source venv/bin/activate    # Unix
 venv\Scripts\activate   # Windows
 pip install -r requirements.txt
+```
 
-# How to run
+## How to run
 For a single simulation:
 python main.py
 
 To run 10 simulations with different seeds:
+```python
 from main import RunManager
 
 manager = RunManager(
@@ -99,8 +101,10 @@ manager = RunManager(
     seed=42
 )
 manager.run_multiple(runs = 10)
-
+```
 To run with custom parameters:
+```python
 manager = RunManager(width=xx, height=xx, nrobots=x, ntasks=xx, algo='xxx', seed=xx)
 manager.run_single(run_id=1)
+```
 
