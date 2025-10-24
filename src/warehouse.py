@@ -3,6 +3,7 @@ from shelf import Shelf
 from order import Order
 from task import Task
 import random
+import csv
 
 Position = Tuple[int, int]
 
@@ -13,6 +14,7 @@ class Warehouse:
         self.shelves: Dict[str, Shelf] = {}
         self.orders: Dict[int, Order] = {}
         self.tasks: List[Task] = []
+        self.robots: List = []
         if seed is not None:
             random.seed(seed)
         self._next_task_id = 1
@@ -93,3 +95,24 @@ class Warehouse:
             p = (random.randint(0, self.width - 1), random.randint(0, self.height - 1))
             d = (random.randint(0, self.width - 1), random.randint(0, self.height - 1))
             self.add_task(order_id = None, shelf_id = None, item = None, qty = 1, pickup = p, dropoff = d)
+
+    def spawn_robots(self, n: int):
+        from robot import Robot
+        for i in range(n):
+            self.robots.append(Robot(i + 1, (0, i)))
+
+    def export_data(self, filename: str):
+        with open(filename, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(['Robot', 'Task', 'RobotX', 'RobotY', 'TaskX', 'TaskY', 'Completed'])
+            for r in self.robots:
+                for t in self.tasks:
+                    writer.writerow([
+                        r.id,
+                        getattr(t, 'id', 'N/A'),
+                        r.pos[0],
+                        r.pos[1],
+                        t.pickup[0] if t.pickup else None,
+                        t.pickup[1] if t.pickup else None,
+                        getattr(t, 'status', 'unassigned')
+                    ])

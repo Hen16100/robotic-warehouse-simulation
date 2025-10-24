@@ -1,0 +1,14 @@
+{
+  "run_id": 7,
+  "steps": 2,
+  "duration_s": 0.00566,
+  "nrobots": 5,
+  "ntasks": 10,
+  "robot_utilization": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  }
+}

@@ -13,3 +13,5 @@ class Task:
     item: Optional[str] = None
     qty: int = 1
     status: str = "unassigned"
+    assign_step: Optional[int] = None
+    complete_step: Optional[int] = None

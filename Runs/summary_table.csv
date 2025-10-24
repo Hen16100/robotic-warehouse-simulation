@@ -1,0 +1,11 @@
+Run ID,Purpose,Parameters,Duration (s),Steps,Status
+001,Baseline,"8x6, 2 robots, FIFO",0.0012,200,Complete
+002,Larger Grid,"20x15, 5 robots, FIFO",0.0077,200,Complete
+003,Nearest Algo,"10x8, 3 robots, NEAREST",0.002,200,Complete
+004,Shelf Density Test,"12x10, 4 robots, FIFO",0.005,200,Complete
+005,Randomized,"12x8, 2 robots, NEAREST",0.0028,200,Complete
+006,Randomized,"15x12, 4 robots, NEAREST",0.012,200,Complete
+007,Randomized,"12x6, 5 robots, NEAREST",0.0057,2,Complete
+008,Randomized,"12x12, 4 robots, FIFO",0.0063,200,Complete
+009,Randomized,"15x12, 3 robots, FIFO",0.0047,200,Complete
+010,Randomized,"8x12, 2 robots, NEAREST",0.0018,200,Complete
