@@ -1,0 +1,32 @@
+{
+  "Larger Grid": {
+    "area_pct": 5.25,
+    "nrobots_pct": 1.5,
+    "ntasks_pct": 0.6666666666666666,
+    "duration_pct_change": 6.811274967332464,
+    "steps_pct_change": 0.29842025535598354,
+    "duration_sensitivity_area": 1.2973857080633264,
+    "duration_sensitivity_nrobots": 4.540849978221643,
+    "duration_sensitivity_ntasks": 10.216912450998697
+  },
+  "Nearest Algo": {
+    "area_pct": 0.6666666666666666,
+    "nrobots_pct": 0.5,
+    "ntasks_pct": 0.3333333333333333,
+    "duration_pct_change": 1.2204592122456606,
+    "steps_pct_change": 0.2557887903051288,
+    "duration_sensitivity_area": 1.8306888183684908,
+    "duration_sensitivity_nrobots": 2.440918424491321,
+    "duration_sensitivity_ntasks": 3.6613776367369817
+  },
+  "Shelf Density Test": {
+    "area_pct": 1.5,
+    "nrobots_pct": 1.0,
+    "ntasks_pct": 0.0,
+    "duration_pct_change": 3.2083255553481433,
+    "steps_pct_change": 0.16987665007574113,
+    "duration_sensitivity_area": 2.138883703565429,
+    "duration_sensitivity_nrobots": 3.2083255553481433,
+    "duration_sensitivity_ntasks": null
+  }
+}

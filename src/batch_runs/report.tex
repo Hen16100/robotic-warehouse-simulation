@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{CS4632 Milestone 4 --- Analysis and Validation}
+\author{FirstName LastName}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report contains parameter sensitivity, scenario testing, validation checks,
+and statistical summaries for the warehouse robot simulation.
+\end{abstract}
+
+\section{Introduction}
+Brief description of the simulation and goals.
+
+\section{Parameter analysis}
+Table~\ref{tab:params} summarizes key statistics per scenario.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+Config & Duration mean (s) & Duration std & Steps mean & Util mean \\
+\midrule
+Baseline & 0.001786 & 0.000523 & 154.03 & 0.748417 \\
+Larger Grid & 0.013948 & 0.006405 & 200.00 & 0.966600 \\
+Nearest Algo & 0.003965 & 0.001131 & 193.43 & 0.966556 \\
+Shelf Density Test & 0.007515 & 0.002117 & 180.20 & 0.874958 \\
+\bottomrule
+\end{tabular}
+\caption{Per-configuration summary statistics}
+\label{tab:params}
+\end{table}
+
+\section{Scenario testing}
+Representative plots are included below.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\linewidth]{durations_by_scenario.png}
+\caption{Run durations (per-run points) by scenario.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\linewidth]{steps_by_scenario.png}
+\caption{Steps (per-run points) by scenario.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\linewidth]{util_by_scenario.png}
+\caption{Mean robot utilization fraction by scenario.}
+\end{figure}
+
+\section{Validation}
+Face validation notes and summary of extreme-condition checks (see appendix).
+
+\section{Statistical summary}
+95\% confidence intervals and per-scenario sample sizes are available
+in \texttt{batch_runs/stats_summary.json}.
+
+\section{Conclusions}
+Main findings, strengths/weaknesses, recommendations.
+
+\appendix
+\section{Files}
+All generated files (CSV, JSON, plots) are in the \texttt{batch_runs/} directory.
+
+\end{document}

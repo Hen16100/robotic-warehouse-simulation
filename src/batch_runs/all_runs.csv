@@ -1,0 +1,121 @@
+scenario,w,h,nrobots,ntasks,algo,run,duration_s,steps,mean_util_frac,approx_remaining_tasks,csv_file,json_file
+Baseline,8,6,2,6,fifo,0,0.00171,3,0.0,0,run_10000.csv,run_10000_summary.json
+Baseline,8,6,2,6,fifo,1,0.00143,200,1.0,4,run_10001.csv,run_10001_summary.json
+Baseline,8,6,2,6,fifo,2,0.00095,200,1.0,4,run_10002.csv,run_10002_summary.json
+Baseline,8,6,2,6,fifo,3,0.00131,200,1.0,4,run_10003.csv,run_10003_summary.json
+Baseline,8,6,2,6,fifo,4,0.002,3,0.0,0,run_10004.csv,run_10004_summary.json
+Baseline,8,6,2,6,fifo,5,0.00124,200,1.0,4,run_10005.csv,run_10005_summary.json
+Baseline,8,6,2,6,fifo,6,0.00189,200,0.9975,3,run_10006.csv,run_10006_summary.json
+Baseline,8,6,2,6,fifo,7,0.00202,200,0.9975,3,run_10007.csv,run_10007_summary.json
+Baseline,8,6,2,6,fifo,8,0.0021,200,1.0,4,run_10008.csv,run_10008_summary.json
+Baseline,8,6,2,6,fifo,9,0.00173,200,1.0,4,run_10009.csv,run_10009_summary.json
+Baseline,8,6,2,6,fifo,10,0.00166,200,0.995,2,run_10010.csv,run_10010_summary.json
+Baseline,8,6,2,6,fifo,11,0.00111,3,0.0,0,run_10011.csv,run_10011_summary.json
+Baseline,8,6,2,6,fifo,12,0.00322,200,0.99,0,run_10012.csv,run_10012_summary.json
+Baseline,8,6,2,6,fifo,13,0.00139,200,0.9975,3,run_10013.csv,run_10013_summary.json
+Baseline,8,6,2,6,fifo,14,0.00126,200,1.0,4,run_10014.csv,run_10014_summary.json
+Baseline,8,6,2,6,fifo,15,0.00125,200,1.0,4,run_10015.csv,run_10015_summary.json
+Baseline,8,6,2,6,fifo,16,0.00187,3,0.0,0,run_10016.csv,run_10016_summary.json
+Baseline,8,6,2,6,fifo,17,0.00284,200,1.0,4,run_10017.csv,run_10017_summary.json
+Baseline,8,6,2,6,fifo,18,0.00161,3,0.0,0,run_10018.csv,run_10018_summary.json
+Baseline,8,6,2,6,fifo,19,0.00188,200,0.5,0,run_10019.csv,run_10019_summary.json
+Baseline,8,6,2,6,fifo,20,0.00167,200,0.99,0,run_10020.csv,run_10020_summary.json
+Baseline,8,6,2,6,fifo,21,0.00162,200,0.9925,1,run_10021.csv,run_10021_summary.json
+Baseline,8,6,2,6,fifo,22,0.00244,3,0.0,0,run_10022.csv,run_10022_summary.json
+Baseline,8,6,2,6,fifo,23,0.00238,200,1.0,4,run_10023.csv,run_10023_summary.json
+Baseline,8,6,2,6,fifo,24,0.00196,3,0.0,0,run_10024.csv,run_10024_summary.json
+Baseline,8,6,2,6,fifo,25,0.00124,200,0.9975,3,run_10025.csv,run_10025_summary.json
+Baseline,8,6,2,6,fifo,26,0.00147,200,1.0,4,run_10026.csv,run_10026_summary.json
+Baseline,8,6,2,6,fifo,27,0.00166,200,0.995,2,run_10027.csv,run_10027_summary.json
+Baseline,8,6,2,6,fifo,28,0.00212,200,1.0,4,run_10028.csv,run_10028_summary.json
+Baseline,8,6,2,6,fifo,29,0.00254,200,1.0,4,run_10029.csv,run_10029_summary.json
+Larger Grid,20,15,5,10,fifo,0,0.01065,200,1.0,5,run_20000.csv,run_20000_summary.json
+Larger Grid,20,15,5,10,fifo,1,0.01475,200,1.0,5,run_20001.csv,run_20001_summary.json
+Larger Grid,20,15,5,10,fifo,2,0.00716,200,1.0,5,run_20002.csv,run_20002_summary.json
+Larger Grid,20,15,5,10,fifo,3,0.01155,200,1.0,5,run_20003.csv,run_20003_summary.json
+Larger Grid,20,15,5,10,fifo,4,0.02058,200,1.0,5,run_20004.csv,run_20004_summary.json
+Larger Grid,20,15,5,10,fifo,5,0.03692,200,0.598,0,run_20005.csv,run_20005_summary.json
+Larger Grid,20,15,5,10,fifo,6,0.01783,200,1.0,5,run_20006.csv,run_20006_summary.json
+Larger Grid,20,15,5,10,fifo,7,0.0121,200,1.0,5,run_20007.csv,run_20007_summary.json
+Larger Grid,20,15,5,10,fifo,8,0.01301,200,1.0,5,run_20008.csv,run_20008_summary.json
+Larger Grid,20,15,5,10,fifo,9,0.01321,200,1.0,5,run_20009.csv,run_20009_summary.json
+Larger Grid,20,15,5,10,fifo,10,0.01035,200,1.0,5,run_20010.csv,run_20010_summary.json
+Larger Grid,20,15,5,10,fifo,11,0.02952,200,0.4,0,run_20011.csv,run_20011_summary.json
+Larger Grid,20,15,5,10,fifo,12,0.01439,200,1.0,5,run_20012.csv,run_20012_summary.json
+Larger Grid,20,15,5,10,fifo,13,0.00905,200,1.0,5,run_20013.csv,run_20013_summary.json
+Larger Grid,20,15,5,10,fifo,14,0.01155,200,1.0,5,run_20014.csv,run_20014_summary.json
+Larger Grid,20,15,5,10,fifo,15,0.00986,200,1.0,5,run_20015.csv,run_20015_summary.json
+Larger Grid,20,15,5,10,fifo,16,0.01516,200,1.0,5,run_20016.csv,run_20016_summary.json
+Larger Grid,20,15,5,10,fifo,17,0.01566,200,1.0,5,run_20017.csv,run_20017_summary.json
+Larger Grid,20,15,5,10,fifo,18,0.00969,200,1.0,5,run_20018.csv,run_20018_summary.json
+Larger Grid,20,15,5,10,fifo,19,0.01418,200,1.0,5,run_20019.csv,run_20019_summary.json
+Larger Grid,20,15,5,10,fifo,20,0.00901,200,1.0,5,run_20020.csv,run_20020_summary.json
+Larger Grid,20,15,5,10,fifo,21,0.00658,200,1.0,5,run_20021.csv,run_20021_summary.json
+Larger Grid,20,15,5,10,fifo,22,0.01238,200,1.0,5,run_20022.csv,run_20022_summary.json
+Larger Grid,20,15,5,10,fifo,23,0.01181,200,1.0,5,run_20023.csv,run_20023_summary.json
+Larger Grid,20,15,5,10,fifo,24,0.01856,200,1.0,5,run_20024.csv,run_20024_summary.json
+Larger Grid,20,15,5,10,fifo,25,0.01828,200,1.0,5,run_20025.csv,run_20025_summary.json
+Larger Grid,20,15,5,10,fifo,26,0.00759,200,1.0,5,run_20026.csv,run_20026_summary.json
+Larger Grid,20,15,5,10,fifo,27,0.01683,200,1.0,5,run_20027.csv,run_20027_summary.json
+Larger Grid,20,15,5,10,fifo,28,0.00834,200,1.0,5,run_20028.csv,run_20028_summary.json
+Larger Grid,20,15,5,10,fifo,29,0.0119,200,1.0,5,run_20029.csv,run_20029_summary.json
+Nearest Algo,10,8,3,8,nearest,0,0.00234,200,1.0,5,run_30000.csv,run_30000_summary.json
+Nearest Algo,10,8,3,8,nearest,1,0.00403,200,1.0,5,run_30001.csv,run_30001_summary.json
+Nearest Algo,10,8,3,8,nearest,2,0.00406,200,1.0,5,run_30002.csv,run_30002_summary.json
+Nearest Algo,10,8,3,8,nearest,3,0.00603,200,0.9966666666666667,3,run_30003.csv,run_30003_summary.json
+Nearest Algo,10,8,3,8,nearest,4,0.00388,200,1.0,5,run_30004.csv,run_30004_summary.json
+Nearest Algo,10,8,3,8,nearest,5,0.00424,200,1.0,5,run_30005.csv,run_30005_summary.json
+Nearest Algo,10,8,3,8,nearest,6,0.00189,200,1.0,5,run_30006.csv,run_30006_summary.json
+Nearest Algo,10,8,3,8,nearest,7,0.00356,3,0.0,0,run_30007.csv,run_30007_summary.json
+Nearest Algo,10,8,3,8,nearest,8,0.00281,200,1.0,5,run_30008.csv,run_30008_summary.json
+Nearest Algo,10,8,3,8,nearest,9,0.00326,200,1.0,5,run_30009.csv,run_30009_summary.json
+Nearest Algo,10,8,3,8,nearest,10,0.00411,200,1.0,5,run_30010.csv,run_30010_summary.json
+Nearest Algo,10,8,3,8,nearest,11,0.00317,200,1.0,5,run_30011.csv,run_30011_summary.json
+Nearest Algo,10,8,3,8,nearest,12,0.00413,200,1.0,5,run_30012.csv,run_30012_summary.json
+Nearest Algo,10,8,3,8,nearest,13,0.00396,200,1.0,5,run_30013.csv,run_30013_summary.json
+Nearest Algo,10,8,3,8,nearest,14,0.00485,200,1.0,5,run_30014.csv,run_30014_summary.json
+Nearest Algo,10,8,3,8,nearest,15,0.0047,200,1.0,5,run_30015.csv,run_30015_summary.json
+Nearest Algo,10,8,3,8,nearest,16,0.00635,200,1.0,5,run_30016.csv,run_30016_summary.json
+Nearest Algo,10,8,3,8,nearest,17,0.0048,200,1.0,5,run_30017.csv,run_30017_summary.json
+Nearest Algo,10,8,3,8,nearest,18,0.00525,200,1.0,5,run_30018.csv,run_30018_summary.json
+Nearest Algo,10,8,3,8,nearest,19,0.00342,200,1.0,5,run_30019.csv,run_30019_summary.json
+Nearest Algo,10,8,3,8,nearest,20,0.00294,200,1.0,5,run_30020.csv,run_30020_summary.json
+Nearest Algo,10,8,3,8,nearest,21,0.00477,200,1.0,5,run_30021.csv,run_30021_summary.json
+Nearest Algo,10,8,3,8,nearest,22,0.00285,200,1.0,5,run_30022.csv,run_30022_summary.json
+Nearest Algo,10,8,3,8,nearest,23,0.00308,200,1.0,5,run_30023.csv,run_30023_summary.json
+Nearest Algo,10,8,3,8,nearest,24,0.0045,200,1.0,5,run_30024.csv,run_30024_summary.json
+Nearest Algo,10,8,3,8,nearest,25,0.00526,200,1.0,5,run_30025.csv,run_30025_summary.json
+Nearest Algo,10,8,3,8,nearest,26,0.00419,200,1.0,5,run_30026.csv,run_30026_summary.json
+Nearest Algo,10,8,3,8,nearest,27,0.00549,200,1.0,5,run_30027.csv,run_30027_summary.json
+Nearest Algo,10,8,3,8,nearest,28,0.00329,200,1.0,5,run_30028.csv,run_30028_summary.json
+Nearest Algo,10,8,3,8,nearest,29,0.00174,200,1.0,5,run_30029.csv,run_30029_summary.json
+Shelf Density Test,12,10,4,6,fifo,0,0.00489,200,1.0,2,run_40000.csv,run_40000_summary.json
+Shelf Density Test,12,10,4,6,fifo,1,0.00856,200,1.0,2,run_40001.csv,run_40001_summary.json
+Shelf Density Test,12,10,4,6,fifo,2,0.00754,200,1.0,2,run_40002.csv,run_40002_summary.json
+Shelf Density Test,12,10,4,6,fifo,3,0.00754,200,1.0,2,run_40003.csv,run_40003_summary.json
+Shelf Density Test,12,10,4,6,fifo,4,0.00695,200,1.0,2,run_40004.csv,run_40004_summary.json
+Shelf Density Test,12,10,4,6,fifo,5,0.00556,200,1.0,2,run_40005.csv,run_40005_summary.json
+Shelf Density Test,12,10,4,6,fifo,6,0.0086,2,0.0,0,run_40006.csv,run_40006_summary.json
+Shelf Density Test,12,10,4,6,fifo,7,0.00834,200,1.0,2,run_40007.csv,run_40007_summary.json
+Shelf Density Test,12,10,4,6,fifo,8,0.00885,200,1.0,2,run_40008.csv,run_40008_summary.json
+Shelf Density Test,12,10,4,6,fifo,9,0.00584,200,1.0,2,run_40009.csv,run_40009_summary.json
+Shelf Density Test,12,10,4,6,fifo,10,0.00419,200,1.0,2,run_40010.csv,run_40010_summary.json
+Shelf Density Test,12,10,4,6,fifo,11,0.00648,200,1.0,2,run_40011.csv,run_40011_summary.json
+Shelf Density Test,12,10,4,6,fifo,12,0.00707,200,1.0,2,run_40012.csv,run_40012_summary.json
+Shelf Density Test,12,10,4,6,fifo,13,0.00615,200,1.0,2,run_40013.csv,run_40013_summary.json
+Shelf Density Test,12,10,4,6,fifo,14,0.00978,200,1.0,2,run_40014.csv,run_40014_summary.json
+Shelf Density Test,12,10,4,6,fifo,15,0.01164,200,0.5,0,run_40015.csv,run_40015_summary.json
+Shelf Density Test,12,10,4,6,fifo,16,0.0058,200,1.0,2,run_40016.csv,run_40016_summary.json
+Shelf Density Test,12,10,4,6,fifo,17,0.00875,200,1.0,2,run_40017.csv,run_40017_summary.json
+Shelf Density Test,12,10,4,6,fifo,18,0.00862,200,1.0,2,run_40018.csv,run_40018_summary.json
+Shelf Density Test,12,10,4,6,fifo,19,0.00787,200,1.0,2,run_40019.csv,run_40019_summary.json
+Shelf Density Test,12,10,4,6,fifo,20,0.01139,2,0.0,0,run_40020.csv,run_40020_summary.json
+Shelf Density Test,12,10,4,6,fifo,21,0.00703,200,1.0,2,run_40021.csv,run_40021_summary.json
+Shelf Density Test,12,10,4,6,fifo,22,0.00594,200,0.99875,1,run_40022.csv,run_40022_summary.json
+Shelf Density Test,12,10,4,6,fifo,23,0.01003,200,0.75,0,run_40023.csv,run_40023_summary.json
+Shelf Density Test,12,10,4,6,fifo,24,0.00558,200,1.0,2,run_40024.csv,run_40024_summary.json
+Shelf Density Test,12,10,4,6,fifo,25,0.00639,200,1.0,2,run_40025.csv,run_40025_summary.json
+Shelf Density Test,12,10,4,6,fifo,26,0.00538,200,1.0,2,run_40026.csv,run_40026_summary.json
+Shelf Density Test,12,10,4,6,fifo,27,0.00513,200,1.0,2,run_40027.csv,run_40027_summary.json
+Shelf Density Test,12,10,4,6,fifo,28,0.00663,2,0.0,0,run_40028.csv,run_40028_summary.json
+Shelf Density Test,12,10,4,6,fifo,29,0.01292,200,1.0,2,run_40029.csv,run_40029_summary.json
